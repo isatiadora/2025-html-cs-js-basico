@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios com Bootstrap</title>
+    <!-- Folha de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">"
+    <style>
+        span {
+            color: red;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Ola mundo</h1>
+    <!-- Colocar Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+<!-- conteiner ele ajusta para o uso de 70% e py e o pading vertical -->
+<!-- py 0 a 5, medido em rem py- 3 py5 3x fonte padrão -->
+<div class="conteiner py-5">
+    <!-- mb = margi-button -->
+    <h2 class="mb-3">Formularios</h2>
+    <!-- span eu uso para tratar parte de uma frase -->
+    <p><span> Guia Basico</span> de formulario</p>
+    <!-- ação que o formulario vai tomar -->
+    <!-- method qual verbo HTP -->
+    <!--GET: usado em pesquisa ou envio de parametros via ulr  -->
+    <!-- POST: usado para enviar dados via requisisição (dados sensiveis) -->
+    <!-- PUT: usado para atualização, envia a id via ulr, e dados via req -->
+    <!-- DELETE: usado para deletar um registro -->
+    <form action="" method="post">
+        <div class="mb-3">
+            <!-- o rotulo -->
+            <label for="" class="form-label">texto</label>
+            <!-- o campo do formulario -->
+            <!-- required para campos obrigatorio -->
+            <input type="text" class="form-control" placeholder="Digite o texto" id="text" name="text" required>
+        </div>
+        <!-- senha -->
+        <div class="mb-3">
+            <label for="senha" class="form-label">senha</label>
+            <input type="password" class="form-control" id="password" required>
+        </div>
+        <!-- E-mail -->
+        <div class="mb-3">
+            <label for="E-mail" class="form-label">E-mail</label>
+            <input type="password" class="form-control" id="password" required>
+        </div>
+        <!-- disabled que ele não clicar no campo -->
+        <!-- readonly somente leitura -->
+        <!-- numerico -->
+        <div class="mb-3">
+            <label for="numerico" class="form-label">numerico</label>
+            <input type="number" class="form-control" id="password" required>
+        </div>
+        <!-- date -->
+        <div class="mb-3">
+            <label for="data" class="form-label"><data value="">data</label>
+            <input type="date" class="form-control" id="data" required>
+        </div>
+        <!-- date -->
+        <div class="mb-3">
+            <label for="datahora" class="form-label"><data value="">data</label>
+            <input type="datetime-local" class="form-control" id="data" required>
+        </div>
+        <!-- file -->
+        <!-- multiplique para multiplos arquivos -->
+        <!-- enctype="multipart/form-data" -->
+        <div class="mb-3">
+            <label for="arquivo" class="form-label"><data value="">arquivo</label>
+            <input type="file" class="form-control" id="arquivo" multiple>
+            <!-- cores -->
+        </div>
+        <div class="mb-3">
+            <label for="cor" class="form-label"><data value="">Cor</label>
+            <input type="color" class="form-control" id="cor" multiple>
+            <!-- range -->
+        </div>
+        <div class="mb-3">
+            <label for="intervalo" class="form-label"><data value="">intervalo</label>
+            <input type="range" class="form-control" id="intervalo" multiple>
+            <!-- texttarea -->
+        </div>
+        <div class="mb-3">
+            |<label for="areatexto"> Area de Texto</label>
+            <textarea class=" form-control" id="areatexto" rows="18" cols="3" maxlength="248">
+                    </textarea>
+
+        </div>
+        <!-- Select -->
+        <div class="mb-3">
+            <label for="selecione" class="form-label">
+                <select name="marca_id" id="selecione" class="form-select">
+                <option value="" disabled>Acer</option>
+                <option value="1" disablad>Dell</option>
+                <option value="2" disabled>Tosshiba</option>
+                <option value="3" disabled>Lenovo</option>
+                </select>
+        </div>
+        <!-- Check box -->
+        <div class="mb-3">
+            <input type="checkbox" class="form-check-input" id="checkbox">
+            <label for="checkbox" class="form-check-label">Java</label>
+        </div>
+    </form>
+</div>
